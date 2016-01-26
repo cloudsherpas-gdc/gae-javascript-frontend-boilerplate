@@ -1,0 +1,22 @@
+module: default
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /static
+  static_dir: dist/static
+- url: /.*
+  static_files: index.html
+  upload: index.html
+
+skip_files:
+- ^(.*/)?/src/.*$
+- ^(.*/)?app\.ya?ml
+- ^(.*/)?#.*#
+- ^(.*/)?.*~
+- ^node_modules$
+- ^(.*/)?*.md~
+- ^devServer.js$
+- ^package.json$
+- ^webpack.config.*$
