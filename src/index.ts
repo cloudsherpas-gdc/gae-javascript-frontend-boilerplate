@@ -1,6 +1,6 @@
-var angular = require('angular');
+import * as angular from 'angular';
 
-var ngModule = angular.module('app', []);
+let ngModule = angular.module('app', []);
 ngModule.run(() => console.log("Hello World!"));
 
 angular.bootstrap(document, ['app']);

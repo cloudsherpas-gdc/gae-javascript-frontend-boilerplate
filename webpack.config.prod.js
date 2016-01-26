@@ -4,7 +4,7 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'source-map',
   entry: [
-    './src/index'
+    './src/index.ts'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
@@ -24,6 +24,9 @@ module.exports = {
       }
     })
   ],
+  resolve: {
+    extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js']
+  },
   module: {
     loaders: [{
       test: /\.js$/,
