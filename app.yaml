@@ -16,7 +16,3 @@ skip_files:
 - ^(.*/)?#.*#
 - ^(.*/)?.*~
 - ^node_modules$
-- ^(.*/)?*.md~
-- ^devServer.js$
-- ^package.json$
-- ^webpack.config.*$
